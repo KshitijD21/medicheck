@@ -99,7 +99,7 @@ export default function GroupCompaniesPage() {
           </div>
 
           <div className="space-y-8">
-            {groupCompanies.map((company, index) => (
+            {groupCompanies.map((company) => (
               <Card
                 key={company.name}
                 className="bg-white border-[#E2E8F0] hover:shadow-lg transition-all duration-300"

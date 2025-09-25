@@ -12,8 +12,8 @@ export default function NotFound() {
             Page Not Found
           </h2>
           <p className="text-[#64748B] mb-8">
-            Sorry, we couldn't find the page you're looking for. The page might
-            have been moved, renamed, or doesn't exist.
+            Sorry, we couldn&apos;t find the page you&apos;re looking for. The
+            page might have been moved, renamed, or doesn&apos;t exist.
           </p>
         </div>
 
@@ -44,8 +44,8 @@ export default function NotFound() {
             Need Help?
           </h3>
           <p className="text-[#64748B] text-sm mb-4">
-            If you're looking for our healthcare services or need assistance,
-            feel free to contact us directly.
+            If you&apos;re looking for our healthcare services or need
+            assistance, feel free to contact us directly.
           </p>
           <div className="flex flex-col sm:flex-row gap-2 text-sm">
             <Link href="/contact" className="text-[#1976D2] hover:underline">

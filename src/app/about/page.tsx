@@ -143,13 +143,13 @@ export default function AboutPage() {
               Our Leadership Team
             </h2>
             <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
-              Meet the experienced professionals leading Medi-Check's mission to
-              deliver world-class occupational healthcare solutions
+              Meet the experienced professionals leading Medi-Check&apos;s
+              mission to deliver world-class occupational healthcare solutions
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
+            {teamMembers.map((member) => (
               <Card
                 key={member.name}
                 className="bg-white border-[#E2E8F0] hover:shadow-lg transition-all duration-300"

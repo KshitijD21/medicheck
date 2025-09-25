@@ -24,7 +24,7 @@ export function TestimonialCard({ testimonial, index }: TestimonialCardProps) {
         <CardContent className="p-6">
           <Quote className="h-8 w-8 text-[#7CB342] mb-4" />
           <blockquote className="text-[#64748B] mb-6 italic leading-relaxed">
-            "{testimonial.content}"
+            &quot;{testimonial.content}&quot;
           </blockquote>
           <div className="flex items-center space-x-4">
             <Avatar className="h-12 w-12">

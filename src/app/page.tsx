@@ -126,7 +126,7 @@ export default function Home() {
       <section className="py-16 px-4 bg-gradient-to-r from-[#1976D2] to-[#1565C0] text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Partner with India's Leading OHC Provider?
+            Ready to Partner with India&apos;s Leading OHC Provider?
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Join 500+ companies who trust us with their occupational health

@@ -36,7 +36,7 @@ export default function ContactPage() {
                 </h2>
                 <p className="text-[#64748B] text-lg mb-8">
                   Reach out to us for any inquiries about our occupational
-                  health services. We're here to help you create a safer,
+                  health services. We&apos;re here to help you create a safer,
                   healthier workplace.
                 </p>
               </div>
@@ -149,7 +149,7 @@ export default function ContactPage() {
                           Business Hours
                         </h3>
                         <p className="text-[#64748B] mb-2">
-                          We're here when you need us
+                          We&apos;re here when you need us
                         </p>
                         <div className="space-y-1 text-[#1E293B]">
                           <p>
@@ -226,8 +226,8 @@ export default function ContactPage() {
                 <p className="text-[#64748B]">
                   Yes, we have a strong presence across India with 30+ centers
                   and mobile health units. We serve remote locations through our
-                  "Health on Wheels" program and can establish temporary OHCs
-                  for project-based requirements.
+                  &quot;Health on Wheels&quot; program and can establish
+                  temporary OHCs for project-based requirements.
                 </p>
               </CardContent>
             </Card>

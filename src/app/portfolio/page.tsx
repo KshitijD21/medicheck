@@ -121,7 +121,7 @@ export default function PortfolioPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {portfolioItems.map((item, index) => (
+            {portfolioItems.map((item) => (
               <Card
                 key={item.title}
                 className="bg-white border-[#E2E8F0] hover:shadow-lg transition-all duration-300 h-full"

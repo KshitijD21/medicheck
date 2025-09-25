@@ -39,7 +39,7 @@ export function ContactForm({
     resolver: zodResolver(contactFormSchema),
   });
 
-  const onSubmit = async (data: ContactFormData) => {
+  const onSubmit = async (_data: ContactFormData) => {
     setIsSubmitting(true);
 
     try {
@@ -51,7 +51,7 @@ export function ContactForm({
       });
 
       reset();
-    } catch (error) {
+    } catch (_error) {
       toast.error("Something went wrong!", {
         description: "Please try again or contact us directly.",
       });
