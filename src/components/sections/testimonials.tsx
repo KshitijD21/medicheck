@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Quote } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Testimonial } from "@/types";
+import { motion } from "framer-motion";
+import { Quote } from "lucide-react";
 
 interface TestimonialCardProps {
   testimonial: Testimonial;
@@ -30,11 +30,16 @@ export function TestimonialCard({ testimonial, index }: TestimonialCardProps) {
             <Avatar className="h-12 w-12">
               <AvatarImage src={testimonial.image} alt={testimonial.name} />
               <AvatarFallback className="bg-[#1976D2] text-white">
-                {testimonial.name.split(' ').map(n => n[0]).join('')}
+                {testimonial.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
               </AvatarFallback>
             </Avatar>
             <div>
-              <div className="font-semibold text-[#1E293B]">{testimonial.name}</div>
+              <div className="font-semibold text-[#1E293B]">
+                {testimonial.name}
+              </div>
               <div className="text-sm text-[#64748B]">
                 {testimonial.position}, {testimonial.company}
               </div>
@@ -52,7 +57,11 @@ interface TestimonialsProps {
   subtitle?: string;
 }
 
-export function Testimonials({ testimonials, title, subtitle }: TestimonialsProps) {
+export function Testimonials({
+  testimonials,
+  title,
+  subtitle,
+}: TestimonialsProps) {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="container mx-auto max-w-6xl">
@@ -76,13 +85,13 @@ export function Testimonials({ testimonials, title, subtitle }: TestimonialsProp
             )}
           </motion.div>
         )}
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <TestimonialCard 
-              key={`${testimonial.name}-${testimonial.company}`} 
-              testimonial={testimonial} 
-              index={index} 
+            <TestimonialCard
+              key={`${testimonial.name}-${testimonial.company}`}
+              testimonial={testimonial}
+              index={index}
             />
           ))}
         </div>

@@ -1,17 +1,26 @@
-import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/hero-section";
 import { ServicesGrid } from "@/components/sections/services-grid";
-import { services } from "@/lib/constants";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { services } from "@/lib/constants";
+import type { Metadata } from "next";
 
-import { CheckCircle, Shield, Clock, Award } from "lucide-react";
+import { Award, CheckCircle, Clock, Shield } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Our Services - Comprehensive Occupational Health Solutions | Medi-Check",
-  description: "Explore Medi-Check's complete range of occupational health services: OHC centers, maritime health, corporate wellness, ambulance services, training programs & more.",
-  keywords: "occupational health services, OHC centers, maritime health, corporate wellness, ambulance services, first aid training, health on wheels",
+  title:
+    "Our Services - Comprehensive Occupational Health Solutions | Medi-Check",
+  description:
+    "Explore Medi-Check's complete range of occupational health services: OHC centers, maritime health, corporate wellness, ambulance services, training programs & more.",
+  keywords:
+    "occupational health services, OHC centers, maritime health, corporate wellness, ambulance services, first aid training, health on wheels",
 };
 
 export default function ServicesPage() {
@@ -33,47 +42,55 @@ export default function ServicesPage() {
               Why Choose Our Services?
             </h2>
             <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
-              We combine medical expertise with cutting-edge technology to deliver 
-              unparalleled occupational health services
+              We combine medical expertise with cutting-edge technology to
+              deliver unparalleled occupational health services
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-[#1976D2] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-[#1E293B] mb-2">Certified Excellence</h3>
+              <h3 className="text-lg font-bold text-[#1E293B] mb-2">
+                Certified Excellence
+              </h3>
               <p className="text-[#64748B] text-sm">
                 DISH, NABL, and DG Shipping approved services
               </p>
             </div>
-            
+
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-[#7CB342] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-[#1E293B] mb-2">24/7 Availability</h3>
+              <h3 className="text-lg font-bold text-[#1E293B] mb-2">
+                24/7 Availability
+              </h3>
               <p className="text-[#64748B] text-sm">
                 Round-the-clock emergency medical services
               </p>
             </div>
-            
+
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-[#1976D2] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-[#1E293B] mb-2">Expert Team</h3>
+              <h3 className="text-lg font-bold text-[#1E293B] mb-2">
+                Expert Team
+              </h3>
               <p className="text-[#64748B] text-sm">
                 Qualified medical professionals with 25+ years experience
               </p>
             </div>
-            
+
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-[#7CB342] rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-[#1E293B] mb-2">Nationwide Coverage</h3>
+              <h3 className="text-lg font-bold text-[#1E293B] mb-2">
+                Nationwide Coverage
+              </h3>
               <p className="text-[#64748B] text-sm">
                 30+ OHC centers across India with global presence
               </p>
@@ -95,7 +112,7 @@ export default function ServicesPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B] mb-12 text-center">
             Service Highlights & Certifications
           </h2>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <Card className="bg-gradient-to-br from-[#1976D2] to-[#1565C0] text-white border-0">
               <CardHeader>
@@ -127,7 +144,7 @@ export default function ServicesPage() {
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="bg-gradient-to-br from-[#7CB342] to-[#689F38] text-white border-0">
               <CardHeader>
                 <CardTitle className="text-2xl text-white">
@@ -141,7 +158,9 @@ export default function ServicesPage() {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="h-5 w-5 text-white" />
-                    <span>DISH (Director General of Health Services) Approved</span>
+                    <span>
+                      DISH (Director General of Health Services) Approved
+                    </span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="h-5 w-5 text-white" />
@@ -173,15 +192,25 @@ export default function ServicesPage() {
               We proudly serve 500+ corporate clients across various industries
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
             {[
-              "Pepsi", "Nokia", "Vodafone", "L&T", "Godrej", 
-              "Mahanagar Gas", "TATA Group", "Reliance", "Wipro", "Infosys"
+              "Pepsi",
+              "Nokia",
+              "Vodafone",
+              "L&T",
+              "Godrej",
+              "Mahanagar Gas",
+              "TATA Group",
+              "Reliance",
+              "Wipro",
+              "Infosys",
             ].map((client) => (
               <div key={client} className="text-center">
                 <div className="bg-white p-4 rounded-lg shadow-sm border border-[#E2E8F0] hover:shadow-md transition-shadow">
-                  <div className="text-lg font-semibold text-[#1E293B]">{client}</div>
+                  <div className="text-lg font-semibold text-[#1E293B]">
+                    {client}
+                  </div>
                 </div>
               </div>
             ))}
@@ -196,13 +225,23 @@ export default function ServicesPage() {
             Ready to Enhance Your Workplace Health?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Let our experts design a customized occupational health program for your organization
+            Let our experts design a customized occupational health program for
+            your organization
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-[#7CB342] hover:bg-[#689F38] text-white">
+            <Button
+              asChild
+              size="lg"
+              className="bg-[#7CB342] hover:bg-[#689F38] text-white"
+            >
               <Link href="/contact">Get Custom Quote</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[#1976D2]">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-white text-white hover:bg-white hover:text-[#1976D2]"
+            >
               <Link href="/portfolio">View Case Studies</Link>
             </Button>
           </div>

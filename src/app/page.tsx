@@ -1,8 +1,8 @@
 import { HeroSection } from "@/components/sections/hero-section";
-import { StatisticCard } from "@/components/sections/statistics";
 import { ServicesGrid } from "@/components/sections/services-grid";
+import { StatisticCard } from "@/components/sections/statistics";
 import { Testimonials } from "@/components/sections/testimonials";
-import { statistics, services, testimonials } from "@/lib/constants";
+import { services, statistics, testimonials } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -49,32 +49,38 @@ export default function Home() {
               <div className="bg-white p-8 rounded-lg shadow-sm border border-[#E2E8F0]">
                 <div className="flex items-center mb-4">
                   <div className="w-3 h-3 bg-[#7CB342] rounded-full mr-3"></div>
-                  <h3 className="text-2xl font-bold text-[#1E293B]">Our Vision</h3>
+                  <h3 className="text-2xl font-bold text-[#1E293B]">
+                    Our Vision
+                  </h3>
                 </div>
                 <p className="text-[#64748B] leading-relaxed">
-                  To be a globally recognized leader in occupational healthcare, 
-                  setting benchmarks for quality, innovation, and comprehensive 
-                  health solutions that protect and enhance the well-being of 
+                  To be a globally recognized leader in occupational healthcare,
+                  setting benchmarks for quality, innovation, and comprehensive
+                  health solutions that protect and enhance the well-being of
                   workers across all industries.
                 </p>
               </div>
-              
+
               <div className="bg-white p-8 rounded-lg shadow-sm border border-[#E2E8F0]">
                 <div className="flex items-center mb-4">
                   <div className="w-3 h-3 bg-[#1976D2] rounded-full mr-3"></div>
-                  <h3 className="text-2xl font-bold text-[#1E293B]">Our Mission</h3>
+                  <h3 className="text-2xl font-bold text-[#1E293B]">
+                    Our Mission
+                  </h3>
                 </div>
                 <p className="text-[#64748B] leading-relaxed">
-                  To deliver authentic, reliable, and preventive healthcare solutions 
-                  through advanced medical technology, expert professionals, and 
-                  comprehensive occupational health programs that ensure workplace 
-                  safety and employee wellness.
+                  To deliver authentic, reliable, and preventive healthcare
+                  solutions through advanced medical technology, expert
+                  professionals, and comprehensive occupational health programs
+                  that ensure workplace safety and employee wellness.
                 </p>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-[#1976D2] to-[#1565C0] p-8 rounded-lg text-white">
-              <h3 className="text-2xl font-bold mb-6">Why Choose Medi-Check?</h3>
+              <h3 className="text-2xl font-bold mb-6">
+                Why Choose Medi-Check?
+              </h3>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#7CB342] rounded-full mt-2 flex-shrink-0"></div>
@@ -123,7 +129,8 @@ export default function Home() {
             Ready to Partner with India's Leading OHC Provider?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join 500+ companies who trust us with their occupational health needs
+            Join 500+ companies who trust us with their occupational health
+            needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

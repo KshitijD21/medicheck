@@ -41,7 +41,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  
+
   /* Medical Color Scheme */
   --color-medical-primary: #1976D2;
   --color-medical-primary-dark: #1565C0;
@@ -61,7 +61,7 @@
 
 :root {
   --radius: 0.625rem;
-  
+
   /* Medical Theme Colors */
   --background: #F8FAFB;
   --foreground: #1E293B;

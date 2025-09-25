@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 interface HeroSectionProps {
@@ -19,10 +19,16 @@ export function HeroSection({
   description,
   ctaText = "Get Started",
   ctaLink = "/contact",
-  backgroundGradient = true
+  backgroundGradient = true,
 }: HeroSectionProps) {
   return (
-    <section className={`relative py-20 px-4 ${backgroundGradient ? 'bg-gradient-to-br from-[#F0F9FF] to-[#F8FAFB]' : 'bg-[#F8FAFB]'}`}>
+    <section
+      className={`relative py-20 px-4 ${
+        backgroundGradient
+          ? "bg-gradient-to-br from-[#F0F9FF] to-[#F8FAFB]"
+          : "bg-[#F8FAFB]"
+      }`}
+    >
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -40,7 +46,7 @@ export function HeroSection({
               {subtitle}
             </motion.p>
           )}
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -49,7 +55,7 @@ export function HeroSection({
           >
             {title}
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -58,7 +64,7 @@ export function HeroSection({
           >
             {description}
           </motion.p>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -83,7 +89,7 @@ export function HeroSection({
           </motion.div>
         </motion.div>
       </div>
-      
+
       {/* Background Pattern */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#7CB342] rounded-full opacity-10 blur-3xl"></div>

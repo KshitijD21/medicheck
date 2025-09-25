@@ -1,4 +1,4 @@
-import { NavItem, Service, TeamMember, Testimonial, Location, Client, Statistic, GroupCompany, Portfolio } from "@/types";
+import { Client, GroupCompany, Location, NavItem, Portfolio, Service, Statistic, TeamMember, Testimonial } from "@/types";
 
 // Navigation items
 export const navItems: NavItem[] = [

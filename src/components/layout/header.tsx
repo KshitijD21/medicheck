@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { Mail, Menu, Phone, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,7 +29,9 @@ export function Header() {
               </div>
             </div>
             <div className="text-center md:text-right">
-              <span className="text-xs">Serving Healthcare Excellence Since 1997</span>
+              <span className="text-xs">
+                Serving Healthcare Excellence Since 1997
+              </span>
             </div>
           </div>
         </div>

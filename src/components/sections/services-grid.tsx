@@ -1,19 +1,25 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Service } from "@/types";
-import Link from "next/link";
-import { 
-  Stethoscope, 
-  Ship, 
-  Heart, 
-  Truck, 
-  GraduationCap, 
+import { motion } from "framer-motion";
+import {
+  Building,
+  GraduationCap,
+  Heart,
   MapPin,
-  Building
+  Ship,
+  Stethoscope,
+  Truck,
 } from "lucide-react";
+import Link from "next/link";
 
 const serviceIcons = {
   ohc: Stethoscope,
@@ -31,8 +37,9 @@ interface ServiceCardProps {
 }
 
 export function ServiceCard({ service, index }: ServiceCardProps) {
-  const Icon = serviceIcons[service.id as keyof typeof serviceIcons] || Stethoscope;
-  
+  const Icon =
+    serviceIcons[service.id as keyof typeof serviceIcons] || Stethoscope;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -57,7 +64,10 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
         <CardContent className="pt-0">
           <ul className="space-y-2 mb-6">
             {service.features.slice(0, 4).map((feature, idx) => (
-              <li key={idx} className="flex items-start space-x-2 text-sm text-[#64748B]">
+              <li
+                key={idx}
+                className="flex items-start space-x-2 text-sm text-[#64748B]"
+              >
                 <div className="w-1.5 h-1.5 bg-[#7CB342] rounded-full mt-2 flex-shrink-0"></div>
                 <span>{feature}</span>
               </li>
@@ -106,7 +116,7 @@ export function ServicesGrid({ services, title, subtitle }: ServicesGridProps) {
             )}
           </motion.div>
         )}
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <ServiceCard key={service.id} service={service} index={index} />

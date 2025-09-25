@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 interface AnimatedCounterProps {
   end: number;
@@ -9,7 +9,11 @@ interface AnimatedCounterProps {
   suffix?: string;
 }
 
-export function AnimatedCounter({ end, duration = 2000, suffix = "" }: AnimatedCounterProps) {
+export function AnimatedCounter({
+  end,
+  duration = 2000,
+  suffix = "",
+}: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -30,7 +34,8 @@ export function AnimatedCounter({ end, duration = 2000, suffix = "" }: AnimatedC
 
   return (
     <span>
-      {count}{suffix}
+      {count}
+      {suffix}
     </span>
   );
 }
@@ -42,7 +47,12 @@ interface StatisticCardProps {
   delay?: number;
 }
 
-export function StatisticCard({ value, label, description, delay = 0 }: StatisticCardProps) {
+export function StatisticCard({
+  value,
+  label,
+  description,
+  delay = 0,
+}: StatisticCardProps) {
   const numericValue = parseInt(value.replace(/\D/g, ""));
   const suffix = value.replace(/\d/g, "");
 
@@ -62,9 +72,7 @@ export function StatisticCard({ value, label, description, delay = 0 }: Statisti
         )}
       </div>
       <h3 className="text-lg font-semibold text-[#1E293B] mb-1">{label}</h3>
-      {description && (
-        <p className="text-sm text-[#64748B]">{description}</p>
-      )}
+      {description && <p className="text-sm text-[#64748B]">{description}</p>}
     </motion.div>
   );
 }

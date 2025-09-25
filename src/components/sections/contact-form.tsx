@@ -1,50 +1,59 @@
 "use client";
 
-import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { ContactFormData, contactFormSchema } from "@/lib/validations/contact";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { contactFormSchema, ContactFormData } from "@/lib/validations/contact";
-import { toast } from "sonner";
 import { Loader2, Send } from "lucide-react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 interface ContactFormProps {
   title?: string;
   description?: string;
 }
 
-export function ContactForm({ title = "Get in Touch", description = "Fill out the form below and we'll get back to you within 24 hours." }: ContactFormProps) {
+export function ContactForm({
+  title = "Get in Touch",
+  description = "Fill out the form below and we'll get back to you within 24 hours.",
+}: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors }
+    formState: { errors },
   } = useForm<ContactFormData>({
-    resolver: zodResolver(contactFormSchema)
+    resolver: zodResolver(contactFormSchema),
   });
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    
+
     try {
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
       toast.success("Thank you for your inquiry!", {
-        description: "We'll get back to you within 24 hours."
+        description: "We'll get back to you within 24 hours.",
       });
-      
+
       reset();
     } catch (error) {
       toast.error("Something went wrong!", {
-        description: "Please try again or contact us directly."
+        description: "Please try again or contact us directly.",
       });
     } finally {
       setIsSubmitting(false);
@@ -85,7 +94,7 @@ export function ContactForm({ title = "Get in Touch", description = "Fill out th
                   <p className="text-sm text-red-500">{errors.name.message}</p>
                 )}
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="company" className="text-[#1E293B] font-medium">
                   Company Name *
@@ -98,7 +107,9 @@ export function ContactForm({ title = "Get in Touch", description = "Fill out th
                   {...register("company")}
                 />
                 {errors.company && (
-                  <p className="text-sm text-red-500">{errors.company.message}</p>
+                  <p className="text-sm text-red-500">
+                    {errors.company.message}
+                  </p>
                 )}
               </div>
             </div>
@@ -119,7 +130,7 @@ export function ContactForm({ title = "Get in Touch", description = "Fill out th
                   <p className="text-sm text-red-500">{errors.phone.message}</p>
                 )}
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-[#1E293B] font-medium">
                   Email Address *
@@ -138,7 +149,10 @@ export function ContactForm({ title = "Get in Touch", description = "Fill out th
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="requirements" className="text-[#1E293B] font-medium">
+              <Label
+                htmlFor="requirements"
+                className="text-[#1E293B] font-medium"
+              >
                 Requirements *
               </Label>
               <Textarea
@@ -149,7 +163,9 @@ export function ContactForm({ title = "Get in Touch", description = "Fill out th
                 {...register("requirements")}
               />
               {errors.requirements && (
-                <p className="text-sm text-red-500">{errors.requirements.message}</p>
+                <p className="text-sm text-red-500">
+                  {errors.requirements.message}
+                </p>
               )}
             </div>
 
@@ -170,9 +186,10 @@ export function ContactForm({ title = "Get in Touch", description = "Fill out th
                 </>
               )}
             </Button>
-            
+
             <p className="text-xs text-[#64748B] text-center">
-              By submitting this form, you agree to our privacy policy and terms of service.
+              By submitting this form, you agree to our privacy policy and terms
+              of service.
             </p>
           </form>
         </CardContent>

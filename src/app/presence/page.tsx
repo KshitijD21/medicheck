@@ -1,14 +1,22 @@
-import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/hero-section";
 import { Testimonials } from "@/components/sections/testimonials";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { globalLocations, majorClients, testimonials } from "@/lib/constants";
-import { MapPin, Building, Globe, Users } from "lucide-react";
+import { Building, Globe, MapPin, Users } from "lucide-react";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Global Presence - 30+ Centers Across 5 Countries | Medi-Check",
-  description: "Medi-Check's extensive network spans 30+ OHC centers across India with international presence in Mauritius, Sudan, Zambia, Kenya, and Uganda. Trusted by 500+ clients.",
-  keywords: "global presence, OHC centers India, international healthcare, Mauritius Sudan Zambia Kenya Uganda, pan India coverage",
+  description:
+    "Medi-Check's extensive network spans 30+ OHC centers across India with international presence in Mauritius, Sudan, Zambia, Kenya, and Uganda. Trusted by 500+ clients.",
+  keywords:
+    "global presence, OHC centers India, international healthcare, Mauritius Sudan Zambia Kenya Uganda, pan India coverage",
 };
 
 export default function PresencePage() {
@@ -30,11 +38,12 @@ export default function PresencePage() {
               Expanding Healthcare Access Globally
             </h2>
             <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
-              From bustling metropolitan cities to remote industrial locations, 
-              our healthcare network ensures quality medical services are always within reach
+              From bustling metropolitan cities to remote industrial locations,
+              our healthcare network ensures quality medical services are always
+              within reach
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="text-center bg-gradient-to-br from-[#1976D2] to-[#1565C0] text-white border-0">
               <CardContent className="p-6">
@@ -43,7 +52,7 @@ export default function PresencePage() {
                 <div className="text-sm opacity-90">OHC Centers in India</div>
               </CardContent>
             </Card>
-            
+
             <Card className="text-center bg-gradient-to-br from-[#7CB342] to-[#689F38] text-white border-0">
               <CardContent className="p-6">
                 <Globe className="h-12 w-12 mx-auto mb-4" />
@@ -51,7 +60,7 @@ export default function PresencePage() {
                 <div className="text-sm opacity-90">Countries Worldwide</div>
               </CardContent>
             </Card>
-            
+
             <Card className="text-center bg-gradient-to-br from-[#1976D2] to-[#1565C0] text-white border-0">
               <CardContent className="p-6">
                 <Building className="h-12 w-12 mx-auto mb-4" />
@@ -59,7 +68,7 @@ export default function PresencePage() {
                 <div className="text-sm opacity-90">Corporate Clients</div>
               </CardContent>
             </Card>
-            
+
             <Card className="text-center bg-gradient-to-br from-[#7CB342] to-[#689F38] text-white border-0">
               <CardContent className="p-6">
                 <Users className="h-12 w-12 mx-auto mb-4" />
@@ -79,29 +88,36 @@ export default function PresencePage() {
               International Operations
             </h2>
             <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
-              Expanding beyond India, we bring our expertise to developing healthcare infrastructure 
-              in emerging markets across Africa and the Indian Ocean
+              Expanding beyond India, we bring our expertise to developing
+              healthcare infrastructure in emerging markets across Africa and
+              the Indian Ocean
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {globalLocations
-              .filter(location => location.zone === "International")[0]
+              .filter((location) => location.zone === "International")[0]
               ?.cities.map((country) => (
-                <Card key={country} className="bg-white border-[#E2E8F0] hover:shadow-lg transition-all duration-300 group">
+                <Card
+                  key={country}
+                  className="bg-white border-[#E2E8F0] hover:shadow-lg transition-all duration-300 group"
+                >
                   <CardHeader className="text-center">
                     <div className="w-16 h-16 bg-[#1976D2] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#7CB342] transition-colors duration-300">
                       <Globe className="h-8 w-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl text-[#1E293B]">{country}</CardTitle>
+                    <CardTitle className="text-xl text-[#1E293B]">
+                      {country}
+                    </CardTitle>
                     <CardDescription className="text-[#64748B]">
                       Healthcare Services & Support
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-[#64748B] text-sm">
-                      Providing occupational health solutions and medical support services 
-                      to multinational corporations and local industries.
+                      Providing occupational health solutions and medical
+                      support services to multinational corporations and local
+                      industries.
                     </p>
                   </CardContent>
                 </Card>
@@ -118,16 +134,19 @@ export default function PresencePage() {
               Pan-India Network
             </h2>
             <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
-              Strategically located centers across all major zones ensuring 
+              Strategically located centers across all major zones ensuring
               comprehensive healthcare coverage nationwide
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {globalLocations
-              .filter(location => location.zone !== "International")
+              .filter((location) => location.zone !== "International")
               .map((location) => (
-                <Card key={location.zone} className="bg-white border-[#E2E8F0] hover:shadow-lg transition-all duration-300">
+                <Card
+                  key={location.zone}
+                  className="bg-white border-[#E2E8F0] hover:shadow-lg transition-all duration-300"
+                >
                   <CardHeader>
                     <CardTitle className="text-lg text-[#1976D2] flex items-center">
                       <MapPin className="h-5 w-5 mr-2" />
@@ -158,11 +177,11 @@ export default function PresencePage() {
               Trusted by Industry Leaders
             </h2>
             <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
-              From Fortune 500 companies to government organizations, 
-              we proudly serve diverse industries with specialized healthcare solutions
+              From Fortune 500 companies to government organizations, we proudly
+              serve diverse industries with specialized healthcare solutions
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Group clients by category */}
             <Card className="bg-white border-[#E2E8F0]">
@@ -175,9 +194,16 @@ export default function PresencePage() {
               <CardContent>
                 <div className="space-y-2">
                   {majorClients
-                    .filter(client => ['Technology', 'Telecommunications'].includes(client.category))
+                    .filter((client) =>
+                      ["Technology", "Telecommunications"].includes(
+                        client.category
+                      )
+                    )
                     .map((client) => (
-                      <div key={client.name} className="flex items-center space-x-2">
+                      <div
+                        key={client.name}
+                        className="flex items-center space-x-2"
+                      >
                         <div className="w-2 h-2 bg-[#7CB342] rounded-full"></div>
                         <span className="text-[#64748B]">{client.name}</span>
                       </div>
@@ -185,7 +211,7 @@ export default function PresencePage() {
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="bg-white border-[#E2E8F0]">
               <CardHeader>
                 <CardTitle className="text-[#1976D2] flex items-center">
@@ -196,9 +222,18 @@ export default function PresencePage() {
               <CardContent>
                 <div className="space-y-2">
                   {majorClients
-                    .filter(client => ['Engineering & Construction', 'Consumer Goods', 'FMCG'].includes(client.category))
+                    .filter((client) =>
+                      [
+                        "Engineering & Construction",
+                        "Consumer Goods",
+                        "FMCG",
+                      ].includes(client.category)
+                    )
                     .map((client) => (
-                      <div key={client.name} className="flex items-center space-x-2">
+                      <div
+                        key={client.name}
+                        className="flex items-center space-x-2"
+                      >
                         <div className="w-2 h-2 bg-[#7CB342] rounded-full"></div>
                         <span className="text-[#64748B]">{client.name}</span>
                       </div>
@@ -206,7 +241,7 @@ export default function PresencePage() {
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="bg-white border-[#E2E8F0]">
               <CardHeader>
                 <CardTitle className="text-[#1976D2] flex items-center">
@@ -217,9 +252,19 @@ export default function PresencePage() {
               <CardContent>
                 <div className="space-y-2">
                   {majorClients
-                    .filter(client => ['Government', 'Aviation', 'Healthcare', 'Energy'].includes(client.category))
+                    .filter((client) =>
+                      [
+                        "Government",
+                        "Aviation",
+                        "Healthcare",
+                        "Energy",
+                      ].includes(client.category)
+                    )
                     .map((client) => (
-                      <div key={client.name} className="flex items-center space-x-2">
+                      <div
+                        key={client.name}
+                        className="flex items-center space-x-2"
+                      >
                         <div className="w-2 h-2 bg-[#7CB342] rounded-full"></div>
                         <span className="text-[#64748B]">{client.name}</span>
                       </div>
@@ -245,8 +290,8 @@ export default function PresencePage() {
             Ready to Expand Your Healthcare Reach?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Whether you need local or international healthcare support, 
-            our global network is ready to serve your organization
+            Whether you need local or international healthcare support, our
+            global network is ready to serve your organization
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

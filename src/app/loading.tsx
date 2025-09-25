@@ -6,5 +6,5 @@ export default function Loading() {
         <p className="text-[#64748B] font-medium">Loading Medi-Check...</p>
       </div>
     </div>
-  )
+  );
 }
