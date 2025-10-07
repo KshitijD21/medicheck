@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -19,7 +18,6 @@ import {
   Stethoscope,
   Truck,
 } from "lucide-react";
-import Link from "next/link";
 
 const serviceIcons = {
   ohc: Stethoscope,
@@ -73,13 +71,13 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
               </li>
             ))}
           </ul>
-          <Button
+          {/* <Button
             asChild
             variant="outline"
             className="w-full border-[#1976D2] text-[#1976D2] hover:bg-[#1976D2] hover:text-white transition-colors duration-300"
           >
             <Link href="/services">Learn More</Link>
-          </Button>
+          </Button> */}
         </CardContent>
       </Card>
     </motion.div>
