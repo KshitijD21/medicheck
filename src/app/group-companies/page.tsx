@@ -249,7 +249,7 @@ export default function GroupCompaniesPage() {
               asChild
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-[#1976D2]"
+              className="border-white text-[#1976D2] hover:bg-white"
             >
               <Link href="/services">Explore All Services</Link>
             </Button>
