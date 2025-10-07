@@ -1,5 +1,5 @@
+import { BentoServicesGrid } from "@/components/sections/bento-services-grid-v2";
 import { HeroSection } from "@/components/sections/hero-section";
-import { ServicesGrid } from "@/components/sections/services-grid";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -100,7 +100,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Main Services Grid */}
-      <ServicesGrid
+      <BentoServicesGrid
         services={services}
         title="Our Complete Service Portfolio"
         subtitle="Professional Healthcare Solutions"

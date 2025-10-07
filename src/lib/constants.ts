@@ -25,85 +25,134 @@ export const services: Service[] = [
     id: "ohc",
     title: "Occupational Health Centre (OHC)",
     description: "30+ centers nationally providing comprehensive occupational health services",
+    category: "Primary Care",
+    image: "/service/1st service.png",
     features: [
       "Pre-employment medical examinations",
       "Periodic health check-ups",
       "Fitness certifications",
       "Occupational disease prevention",
       "Health surveillance programs"
-    ]
+    ],
+    gridSize: {
+      desktop: { cols: 2, rows: 2 },
+      tablet: { cols: 2, rows: 2 },
+      mobile: { cols: 1, rows: 1 }
+    }
   },
   {
     id: "maritime",
     title: "Maritime Health Services (Siddhant Marine)",
     description: "DG Shipping approved maritime medical services",
+    category: "Maritime",
+    image: "/service/2nd service.png",
     features: [
       "Seafarer medical examinations",
       "DG Shipping certifications",
       "Maritime health consultancy",
       "Ship medical surveys",
       "Offshore medical services"
-    ]
+    ],
+    gridSize: {
+      desktop: { cols: 1, rows: 2 },
+      tablet: { cols: 1, rows: 1 },
+      mobile: { cols: 1, rows: 1 }
+    }
   },
   {
     id: "wellness",
     title: "Corporate Wellness",
     description: "DISH & NABL approved wellness programs",
+    category: "Wellness",
+    image: "/service/3rd service.png",
     features: [
       "Executive health check-ups",
       "Wellness programs design",
       "Health risk assessments",
       "Lifestyle modification programs",
       "Nutrition counseling"
-    ]
+    ],
+    gridSize: {
+      desktop: { cols: 1, rows: 1 },
+      tablet: { cols: 1, rows: 1 },
+      mobile: { cols: 1, rows: 1 }
+    }
   },
   {
     id: "ambulance",
     title: "Ambulance Services & On-Site Medical Staff",
     description: "30+ ambulances with trained medical professionals",
+    category: "Emergency",
+    image: "/service/4th service.png",
     features: [
       "24/7 emergency response",
       "Advanced life support",
       "Patient transportation",
       "On-site medical support",
       "Industrial accident management"
-    ]
+    ],
+    gridSize: {
+      desktop: { cols: 2, rows: 1 },
+      tablet: { cols: 2, rows: 1 },
+      mobile: { cols: 1, rows: 1 }
+    }
   },
   {
     id: "training",
     title: "First Aid Training Programs & Health Campaigns",
     description: "DISH approved training and awareness programs",
+    category: "Training",
+    image: "/service/5th service.png",
     features: [
       "First aid certification courses",
       "CPR training",
       "Safety awareness programs",
       "Health education campaigns",
       "Emergency response training"
-    ]
+    ],
+    gridSize: {
+      desktop: { cols: 1, rows: 1 },
+      tablet: { cols: 1, rows: 1 },
+      mobile: { cols: 1, rows: 1 }
+    }
   },
   {
     id: "mobile",
     title: "Health on Wheels",
     description: "Mobile healthcare units for remote locations",
+    category: "Mobile Health",
+    image: "/service/6th service.png",
     features: [
       "Mobile medical units",
       "Remote area coverage",
       "Preventive health screenings",
       "On-site diagnostic services",
       "Health education drives"
-    ]
+    ],
+    gridSize: {
+      desktop: { cols: 1, rows: 1 },
+      tablet: { cols: 1, rows: 1 },
+      mobile: { cols: 1, rows: 1 }
+    }
   },
   {
     id: "institutional",
     title: "Institutional Services",
     description: "Nursing courses and professional training programs",
+    category: "Education",
+    image: "/service/7th service.png",
     features: [
       "Nursing education programs",
       "Medical training courses",
       "Skill development programs",
       "Professional certifications",
       "Healthcare education"
-    ]
+    ],
+    gridSize: {
+      desktop: { cols: 1, rows: 1 },
+      tablet: { cols: 1, rows: 1 },
+      mobile: { cols: 1, rows: 1 }
+    }
   }
 ];
 

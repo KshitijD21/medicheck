@@ -1,5 +1,5 @@
+import { BentoServicesGrid } from "@/components/sections/bento-services-grid-v2";
 import { HeroSection } from "@/components/sections/hero-section";
-import { ServicesGrid } from "@/components/sections/services-grid";
 import { StatisticCard } from "@/components/sections/statistics";
 import { Testimonials } from "@/components/sections/testimonials";
 import { services, statistics, testimonials } from "@/lib/constants";
@@ -109,8 +109,8 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <ServicesGrid
-        services={services.slice(0, 6)}
+      <BentoServicesGrid
+        services={services}
         title="Comprehensive Healthcare Solutions"
         subtitle="Our Core Services"
       />
