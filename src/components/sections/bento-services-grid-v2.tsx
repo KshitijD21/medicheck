@@ -2,7 +2,7 @@
 
 import { Service } from "@/types";
 import { motion } from "framer-motion";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -24,19 +24,19 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
 
     switch (index) {
       case 0: // OHC - Large featured card
-        return `${baseClasses} col-span-1 row-span-1 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2 min-h-[280px] md:min-h-[420px] lg:min-h-[500px]`;
+        return `${baseClasses} col-span-1 row-span-1 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2 min-h-[320px] md:min-h-[460px] lg:min-h-[540px]`;
       case 1: // Maritime - Tall card
-        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-2 min-h-[280px] lg:min-h-[500px]`;
+        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-2 min-h-[320px] lg:min-h-[540px]`;
       case 2: // Wellness - Standard
-        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1 min-h-[280px] lg:min-h-[240px]`;
+        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1 min-h-[320px] lg:min-h-[280px]`;
       case 3: // Ambulance - Wide card
-        return `${baseClasses} col-span-1 row-span-1 md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1 min-h-[280px] lg:min-h-[240px]`;
+        return `${baseClasses} col-span-1 row-span-1 md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1 min-h-[320px] lg:min-h-[280px]`;
       case 4: // Training - Standard
-        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1 min-h-[280px] lg:min-h-[240px]`;
+        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1 min-h-[320px] lg:min-h-[280px]`;
       case 5: // Mobile Health - Standard
-        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1 min-h-[280px] lg:min-h-[240px]`;
+        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1 min-h-[320px] lg:min-h-[280px]`;
       case 6: // Institutional - Standard
-        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1 min-h-[280px] lg:min-h-[240px]`;
+        return `${baseClasses} col-span-1 row-span-1 md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1 min-h-[320px] lg:min-h-[280px]`;
       default:
         return `${baseClasses} col-span-1 row-span-1 min-h-[280px]`;
     }
@@ -78,10 +78,10 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
           priority={index < 3}
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-        {/* Enhanced Black Gradient Overlay for Better Text Contrast */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-black/30 transition-all duration-700 group-hover:from-black/98 group-hover:via-black/70 group-hover:to-black/40" />
-        {/* Additional Solid Black Overlay for Professional Look */}
-        <div className="absolute inset-0 bg-black/20 transition-all duration-700 group-hover:bg-black/30" />
+        {/* Reduced Black Gradient Overlay for Better Image Visibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/10 transition-all duration-700 group-hover:from-black/80 group-hover:via-black/45 group-hover:to-black/15" />
+        {/* Minimal Additional Overlay for Professional Look */}
+        <div className="absolute inset-0 bg-black/10 transition-all duration-700 group-hover:bg-black/15" />
       </div>
 
       {/* Content Container */}
@@ -98,7 +98,44 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
 
         {/* Bottom Content Container - Always at bottom */}
         <div className="flex flex-col justify-end">
-          {/* Title and Description - Always visible at bottom */}
+          {/* Features List - Hidden by default, appears on hover above title */}
+          <div
+            className={`transform transition-all duration-700 ease-out space-y-2 sm:space-y-3 ${
+              isMobileExpanded
+                ? "translate-y-0 opacity-100 mb-4"
+                : "translate-y-6 opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-hover:mb-4"
+            }`}
+          >
+            <ul className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
+              {service.features
+                .slice(0, index === 0 ? 5 : index === 1 ? 5 : 4)
+                .map((feature, idx) => (
+                  <li
+                    key={idx}
+                    className="flex items-start space-x-2 text-xs sm:text-sm text-white/90 drop-shadow"
+                  >
+                    <Check className="w-3 h-3 sm:w-4 sm:h-4 text-[#7CB342] mt-0.5 flex-shrink-0 drop-shadow" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+            </ul>
+
+            {/* Enhanced CTA Button
+            <button
+              className="inline-flex items-center space-x-2 px-4 py-2.5 bg-white/15 hover:bg-white/25 text-white rounded-lg backdrop-blur-md transition-all duration-300 border border-white/30 hover:border-white/50 focus:outline-none focus:ring-2 focus:ring-white/60 focus:ring-offset-2 focus:ring-offset-transparent shadow-lg hover:shadow-xl"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                // Handle navigation or modal opening
+              }}
+              aria-label={`Learn more about ${service.title}`}
+            >
+              <span className="text-sm font-semibold">Learn More</span>
+              <ArrowRight className="w-4 h-4" />
+            </button> */}
+          </div>
+
+          {/* Title and Description - Always visible at bottom, moves up on hover */}
           <div
             className={`space-y-2 sm:space-y-3 transition-all duration-700 ease-out ${
               isMobileExpanded || "lg:group-hover:-translate-y-4"
@@ -127,43 +164,6 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
             >
               {service.description}
             </p>
-          </div>
-
-          {/* Features List - Appears at bottom on hover, pushing title up */}
-          <div
-            className={`transform transition-all duration-700 ease-out space-y-2 sm:space-y-3 ${
-              isMobileExpanded
-                ? "translate-y-0 opacity-100 mt-4"
-                : "translate-y-6 opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-hover:mt-4"
-            }`}
-          >
-            <ul className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
-              {service.features
-                .slice(0, index === 0 ? 5 : index === 1 ? 5 : 4)
-                .map((feature, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-start space-x-2 text-xs sm:text-sm text-white/90 drop-shadow"
-                  >
-                    <Check className="w-3 h-3 sm:w-4 sm:h-4 text-[#7CB342] mt-0.5 flex-shrink-0 drop-shadow" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-            </ul>
-
-            {/* Enhanced CTA Button */}
-            <button
-              className="inline-flex items-center space-x-2 px-4 py-2.5 bg-white/15 hover:bg-white/25 text-white rounded-lg backdrop-blur-md transition-all duration-300 border border-white/30 hover:border-white/50 focus:outline-none focus:ring-2 focus:ring-white/60 focus:ring-offset-2 focus:ring-offset-transparent shadow-lg hover:shadow-xl"
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                // Handle navigation or modal opening
-              }}
-              aria-label={`Learn more about ${service.title}`}
-            >
-              <span className="text-sm font-semibold">Learn More</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
           </div>
         </div>
       </div>
@@ -221,7 +221,7 @@ export const BentoServicesGrid: React.FC<BentoServicesGridProps> = ({
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 max-w-4xl mx-auto leading-tight"
                 style={{ color: "#1E293B" }}
               >
-                {title}
+                {/* {title} */}
               </h2>
             )}
           </motion.div>
