@@ -1,5 +1,6 @@
 import { BentoServicesGrid } from "@/components/sections/bento-services-grid-v2";
 import { HeroSection } from "@/components/sections/hero-section";
+import LogoCarousel from "@/components/sections/logo-carousel";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -106,6 +107,11 @@ export default function ServicesPage() {
         subtitle="Professional Healthcare Solutions"
       />
 
+      {/* Logo Carousel */}
+      <section className="py-16 md:py-20 lg:py-24 bg-gray-50">
+        <LogoCarousel />
+      </section>
+
       {/* Service Highlights */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
@@ -182,41 +188,6 @@ export default function ServicesPage() {
       </section>
 
       {/* Corporate Clients */}
-      <section className="py-16 px-4 bg-[#F8FAFB]">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B] mb-4">
-              Trusted by Leading Corporations
-            </h2>
-            <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
-              We proudly serve 500+ corporate clients across various industries
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
-            {[
-              "Pepsi",
-              "Nokia",
-              "Vodafone",
-              "L&T",
-              "Godrej",
-              "Mahanagar Gas",
-              "TATA Group",
-              "Reliance",
-              "Wipro",
-              "Infosys",
-            ].map((client) => (
-              <div key={client} className="text-center">
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-[#E2E8F0] hover:shadow-md transition-shadow">
-                  <div className="text-lg font-semibold text-[#1E293B]">
-                    {client}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-[#1976D2] to-[#1565C0] text-white">

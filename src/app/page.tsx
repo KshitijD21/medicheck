@@ -1,5 +1,6 @@
 import { BentoServicesGrid } from "@/components/sections/bento-services-grid-v2";
 import { HeroSection } from "@/components/sections/hero-section";
+import LogoCarousel from "@/components/sections/logo-carousel";
 import { StatisticCard } from "@/components/sections/statistics";
 import { Testimonials } from "@/components/sections/testimonials";
 import { services, statistics, testimonials } from "@/lib/constants";
@@ -17,10 +18,13 @@ export default function Home() {
       />
 
       {/* Statistics Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-12 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B] mb-4">
+          <div className="text-center mb-10 sm:mb-12">
+            <p className="font-semibold mb-3 sm:mb-4 text-base sm:text-lg lg:text-xl text-[#1976D2]">
+              Our Impact
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 max-w-4xl mx-auto leading-tight text-[#1E293B]">
               Healthcare Excellence in Numbers
             </h2>
             <p className="text-xl text-[#64748B] max-w-2xl mx-auto">
@@ -42,8 +46,18 @@ export default function Home() {
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="py-16 px-4 bg-[#F8FAFB]">
+      <section className="py-12 md:py-16 px-4 bg-[#F8FAFB]">
         <div className="container mx-auto max-w-6xl">
+          {/* Section Header */}
+          <div className="text-center mb-10 sm:mb-12">
+            <p className="font-semibold mb-3 sm:mb-4 text-base sm:text-lg lg:text-xl text-[#1976D2]">
+              About Us
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 max-w-4xl mx-auto leading-tight text-[#1E293B]">
+              Our Vision & Mission
+            </h2>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-lg shadow-sm border border-[#E2E8F0]">
@@ -115,6 +129,11 @@ export default function Home() {
         subtitle="Our Core Services"
       />
 
+      {/* Logo Carousel */}
+      <section className="py-12 px-4 bg-gray-50">
+        <LogoCarousel />
+      </section>
+
       {/* Testimonials */}
       <Testimonials
         testimonials={testimonials}
@@ -123,7 +142,7 @@ export default function Home() {
       />
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-[#1976D2] to-[#1565C0] text-white">
+      <section className="py-12 md:py-16 px-4 bg-gradient-to-r from-[#1976D2] to-[#1565C0] text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Partner with India&apos;s Leading OHC Provider?
