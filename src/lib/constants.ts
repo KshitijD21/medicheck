@@ -163,21 +163,24 @@ export const teamMembers: TeamMember[] = [
     position: "Founder & Chief Medical Officer",
     credentials: "Certifying Surgeon, ACS31-PM/1998",
     experience: "27+ years in occupational health",
-    description: "Pioneered occupational health services in India since 1997. Expert in maritime medicine and industrial health."
+    description: "Pioneered occupational health services in India since 1997. Expert in maritime medicine and industrial health.",
+    image: "/profile/pradeep_mahajan.jpg"
   },
   {
     name: "Dr. Sushrut Limaye",
     position: "Chief Executive Officer",
     credentials: "Dental Surgeon",
     experience: "25+ years in healthcare management",
-    description: "Strategic leader driving company expansion and operational excellence across multiple healthcare verticals."
+    description: "Strategic leader driving company expansion and operational excellence across multiple healthcare verticals.",
+    image: "/profile/Dr. Sushrut Limaye.jpg"
   },
   {
     name: "Mrs. Anita Tripathi",
     position: "Chief Operating Officer",
     credentials: "Healthcare Administration Expert",
     experience: "22+ years with Medi-Check",
-    description: "Operational excellence champion ensuring quality service delivery across all centers and services."
+    description: "Operational excellence champion ensuring quality service delivery across all centers and services.",
+    image: "/profile/Mrs. Anita Tripathi.jpg"
   }
 ];
 

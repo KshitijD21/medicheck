@@ -106,7 +106,7 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
                 : "translate-y-6 opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-hover:mb-4"
             }`}
           >
-            <ul className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
+            <ul className="space-y-1.5 sm:space-y-2 mb-2 sm:mb-3">
               {service.features
                 .slice(0, index === 0 ? 5 : index === 1 ? 5 : 4)
                 .map((feature, idx) => (
@@ -145,9 +145,9 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
             <h3
               className={`font-bold text-white leading-tight drop-shadow-lg ${
                 index === 0
-                  ? "text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl" // Featured card
+                  ? "text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl" // Featured card
                   : index === 1
-                  ? "text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl" // Tall cards
+                  ? "text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl" // Tall cards
                   : "text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl" // Standard cards
               }`}
             >
