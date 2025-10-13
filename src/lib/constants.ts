@@ -160,7 +160,7 @@ export const services: Service[] = [
 export const teamMembers: TeamMember[] = [
   {
     name: "Dr. Pradeep Mahajan",
-    position: "Founder & Chief Medical Officer",
+      position: "Founder & Director",
     credentials: "Certifying Surgeon, ACS31-PM/1998",
     experience: "27+ years in occupational health",
     description: "Pioneered occupational health services in India since 1997. Expert in maritime medicine and industrial health.",
