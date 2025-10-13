@@ -42,7 +42,7 @@ export const services: Service[] = [
   },
   {
     id: "maritime",
-    title: "Maritime Health Services (Siddhant Marine)",
+    title: "Maritime Health Services",
     description: "DG Shipping approved maritime medical services",
     category: "Maritime",
     image: "/service/2nd service.png",

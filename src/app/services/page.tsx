@@ -211,7 +211,7 @@ export default function ServicesPage() {
               asChild
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-[#1976D2]"
+              className="border-white text-[#1976D2] hover:bg-white hover:text-[#1976D2]"
             >
               <Link href="/portfolio">View Case Studies</Link>
             </Button>
