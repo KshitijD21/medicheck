@@ -6,7 +6,6 @@ import {
   Mail,
   MapPin,
   Phone,
-  Twitter,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -33,7 +32,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
+              {/* <Twitter className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" /> */}
               <Linkedin className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
               <Instagram className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
             </div>
@@ -131,7 +130,7 @@ export function Footer() {
             <div className="text-sm text-gray-400">
               <p>© 2024 Medi-Check Health Services. All rights reserved.</p>
             </div>
-            <div className="flex space-x-6 text-sm text-gray-400">
+            {/* <div className="flex space-x-6 text-sm text-gray-400">
               <Link
                 href="/privacy"
                 className="hover:text-white transition-colors"
@@ -150,7 +149,7 @@ export function Footer() {
               >
                 Sitemap
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="text-center mt-4 text-xs text-gray-500">
             Founded by Dr. Pradeep Mahajan in 1997 | 27+ Years of Healthcare

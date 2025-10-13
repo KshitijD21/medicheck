@@ -2,7 +2,7 @@
 
 import { Service } from "@/types";
 import { motion } from "framer-motion";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -140,7 +140,7 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
             </ul>
 
             {/* CTA Button - Appears on hover */}
-            <button
+            {/* <button
               className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 border border-white/20 hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent"
               onClick={(e) => {
                 e.preventDefault();
@@ -150,7 +150,7 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
             >
               <span className="text-sm font-medium">Learn More</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

@@ -239,12 +239,12 @@ export const groupCompanies: GroupCompany[] = [
     services: ["General Medicine", "Surgery", "Critical Care", "Emergency Services"],
     established: "2005"
   },
-  {
-    name: "Siddhant Marine Health Services",
-    description: "Specialized maritime health services approved by DG Shipping",
-    services: ["Seafarer Medical Examinations", "Maritime Consultancy", "Ship Medical Surveys"],
-    established: "2008"
-  },
+  // {
+  //   name: "Siddhant Marine Health Services",
+  //   description: "Specialized maritime health services approved by DG Shipping",
+  //   services: ["Seafarer Medical Examinations", "Maritime Consultancy", "Ship Medical Surveys"],
+  //   established: "2008"
+  // },
   {
     name: "StemRx",
     description: "Advanced regenerative medicine and stem cell therapy center",

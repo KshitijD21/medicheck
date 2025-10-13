@@ -241,9 +241,8 @@ export default function ContactPage() {
               <CardContent>
                 <p className="text-[#64748B]">
                   All our medical professionals are qualified doctors with
-                  relevant specializations. Our founder Dr. Pradeep Mahajan is a
-                  certified surgeon (ACS31-PM/1998), and our team includes
-                  DISH-approved occupational health specialists.
+                  relevant specializations. Our team includes DISH-approved
+                  occupational health specialists.
                 </p>
               </CardContent>
             </Card>
