@@ -66,8 +66,7 @@ export default function AboutPage() {
                     </h3>
                     <p className="text-[#64748B]">
                       Achieved DISH and NABL approvals, establishing ourselves
-                      as a trusted healthcare provider with government
-                      empanelments.
+                      as a trusted healthcare provider with government Tie-ups.
                     </p>
                   </div>
                 </div>

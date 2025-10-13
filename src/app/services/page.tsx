@@ -123,7 +123,7 @@ export default function ServicesPage() {
             <Card className="bg-gradient-to-br from-[#1976D2] to-[#1565C0] text-white border-0">
               <CardHeader>
                 <CardTitle className="text-2xl text-white">
-                  Government Empanelments
+                  Government Tie-ups
                 </CardTitle>
                 <CardDescription className="text-blue-100">
                   Trusted by major government organizations

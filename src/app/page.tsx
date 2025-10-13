@@ -106,7 +106,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#7CB342] rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Government empanelments with major organizations</span>
+                  <span>Government Tie-ups with major organizations</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#7CB342] rounded-full mt-2 flex-shrink-0"></div>

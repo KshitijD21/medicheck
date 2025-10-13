@@ -271,7 +271,7 @@ export const portfolioItems: Portfolio[] = [
     achievements: ["10,000+ donors", "Partnership with blood banks", "Corporate participation"]
   },
   {
-    title: "Government Empanelments",
+    title: "Government Tie-ups",
     description: "Empaneled with major government organizations for healthcare services",
     category: "Government Partnership",
     achievements: ["Maharashtra Police", "AAI", "ESIC", "Various PSUs"]
