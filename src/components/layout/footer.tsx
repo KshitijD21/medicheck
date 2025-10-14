@@ -6,8 +6,8 @@ import {
   Mail,
   MapPin,
   Phone,
-  Twitter,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -18,12 +18,16 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1976D2]">
-                <span className="text-lg font-bold text-white">M</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Medi-Check Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
               <div>
                 <h3 className="text-xl font-bold">Medi-Check</h3>
-                <p className="text-sm text-gray-300">Health Services</p>
+                <p className="text-sm text-gray-300">Health Services Pvt Ltd</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 max-w-sm">
@@ -32,10 +36,27 @@ export function Footer() {
               countries.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Linkedin className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Instagram className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
+              <Link
+                href="https://www.facebook.com/share/17S2UWv12Q/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/medi-check-health-services-pvt-ltd/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/medicheck__?igsh=aDdlbjg5dzJob2Ri"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
+              </Link>
             </div>
           </div>
 
@@ -129,9 +150,11 @@ export function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-400">
-              <p>© 2024 Medi-Check Health Services. All rights reserved.</p>
+              <p>
+                © 2024 Medi-Check Health Services Pvt Ltd. All rights reserved.
+              </p>
             </div>
-            <div className="flex space-x-6 text-sm text-gray-400">
+            {/* <div className="flex space-x-6 text-sm text-gray-400">
               <Link
                 href="/privacy"
                 className="hover:text-white transition-colors"
@@ -150,7 +173,7 @@ export function Footer() {
               >
                 Sitemap
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="text-center mt-4 text-xs text-gray-500">
             Founded by Dr. Pradeep Mahajan in 1997 | 27+ Years of Healthcare

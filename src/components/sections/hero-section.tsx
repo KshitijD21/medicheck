@@ -78,14 +78,14 @@ export function HeroSection({
             >
               <Link href={ctaLink}>{ctaText}</Link>
             </Button>
-            <Button
+            {/* <Button
               asChild
               variant="outline"
               size="lg"
               className="border-[#1976D2] text-[#1976D2] hover:bg-[#1976D2] hover:text-white px-8 py-3 text-lg"
             >
               <Link href="/about">Learn More</Link>
-            </Button>
+            </Button> */}
           </motion.div>
         </motion.div>
       </div>

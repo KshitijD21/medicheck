@@ -6,9 +6,10 @@ import { Clock, ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Get Healthcare Quote | Medi-Check Health Services",
+  title:
+    "Contact Us - Get Healthcare Quote | Medi-Check Health Services Pvt Ltd",
   description:
-    "Contact Medi-Check Health Services for occupational health solutions. Call +91 9321021566 or email info@medicheckworld.com. Located in Navi Mumbai, Maharashtra.",
+    "Contact Medi-Check Health Services Pvt Ltd for occupational health solutions. Call +91 9321021566 or email info@medicheckworld.com. Located in Navi Mumbai, Maharashtra.",
   keywords:
     "contact medi-check, healthcare quote, occupational health consultation, medical services inquiry",
 };
@@ -241,9 +242,8 @@ export default function ContactPage() {
               <CardContent>
                 <p className="text-[#64748B]">
                   All our medical professionals are qualified doctors with
-                  relevant specializations. Our founder Dr. Pradeep Mahajan is a
-                  certified surgeon (ACS31-PM/1998), and our team includes
-                  DISH-approved occupational health specialists.
+                  relevant specializations. Our team includes DISH-approved
+                  occupational health specialists.
                 </p>
               </CardContent>
             </Card>

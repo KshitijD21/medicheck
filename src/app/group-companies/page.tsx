@@ -2,7 +2,6 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -148,7 +147,7 @@ export default function GroupCompaniesPage() {
       </section>
 
       {/* Synergies Section */}
-      <section className="py-16 px-4 bg-white">
+      {/* <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B] mb-4">
@@ -225,7 +224,7 @@ export default function GroupCompaniesPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-[#1976D2] to-[#1565C0] text-white">
@@ -249,7 +248,7 @@ export default function GroupCompaniesPage() {
               asChild
               variant="outline"
               size="lg"
-              className="border-white text-[#1976D2] hover:bg-white"
+              className="border-white text-[#1976D2] hover:bg-white hover:text-[#1976D2]"
             >
               <Link href="/services">Explore All Services</Link>
             </Button>

@@ -113,13 +113,13 @@ export default function PresencePage() {
                       Healthcare Services & Support
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="text-center">
+                  {/* <CardContent className="text-center">
                     <p className="text-[#64748B] text-sm">
                       Providing occupational health solutions and medical
                       support services to multinational corporations and local
                       industries.
                     </p>
-                  </CardContent>
+                  </CardContent> */}
                 </Card>
               ))}
           </div>
