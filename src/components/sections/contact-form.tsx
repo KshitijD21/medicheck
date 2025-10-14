@@ -39,10 +39,12 @@ export function ContactForm({
     resolver: zodResolver(contactFormSchema),
   });
 
-  const onSubmit = async (_data: ContactFormData) => {
+  const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
 
     try {
+      // Log the form data (in a real app, you would send 'data' to your API)
+      console.log("Form submitted with data:", data);
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
@@ -51,7 +53,8 @@ export function ContactForm({
       });
 
       reset();
-    } catch (_error) {
+    } catch (error) {
+      console.error("Form submission error:", error);
       toast.error("Something went wrong!", {
         description: "Please try again or contact us directly.",
       });

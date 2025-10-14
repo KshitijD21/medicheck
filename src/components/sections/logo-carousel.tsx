@@ -143,8 +143,8 @@ export default function LogoCarousel() {
             Industry Leaders Choose Us
           </h2>
           <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-2xl mx-auto">
-            We're proud to partner with industry leaders across various sectors,
-            delivering exceptional healthcare solutions worldwide.
+            We&apos;re proud to partner with industry leaders across various
+            sectors, delivering exceptional healthcare solutions worldwide.
           </p>
         </div>
 

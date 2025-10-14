@@ -48,7 +48,7 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className={getGridClasses()}
-      role="article"
+      role="button"
       tabIndex={0}
       onClick={() => {
         // On mobile, toggle expanded state for touch interaction

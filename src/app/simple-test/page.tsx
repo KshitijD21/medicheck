@@ -30,7 +30,7 @@ export default function SimpleTestPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {services.map((service, index) => (
+        {services.map((service) => (
           <div
             key={service.id}
             className="bg-white rounded-lg shadow-lg overflow-hidden"

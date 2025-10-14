@@ -63,7 +63,7 @@ const BentoServiceCard: React.FC<BentoServiceCardProps> = ({
           }
         }
       }}
-      role="article"
+      role="button"
       tabIndex={0}
       aria-label={`${service.title} - ${service.description}`}
       aria-expanded={isMobileExpanded}
