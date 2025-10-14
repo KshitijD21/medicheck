@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { navItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Mail, Menu, Phone, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -42,12 +43,16 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1976D2]">
-              <span className="text-lg font-bold text-white">M</span>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Medi-Check Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-[#1976D2]">Medi-Check</h1>
-              <p className="text-xs text-[#64748B]">Health Services</p>
+              <p className="text-xs text-[#64748B]">Health Services Pvt Ltd</p>
             </div>
           </Link>
 

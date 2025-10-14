@@ -13,9 +13,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "About Us - Medi-Check Health Services | Founded by Dr. Pradeep Mahajan",
+    "About Us - Medi-Check Health Services Pvt Ltd | Founded by Dr. Pradeep Mahajan",
   description:
-    "Learn about Medi-Check Health Services, founded by Dr. Pradeep Mahajan in 1997. Meet our leadership team including Dr. Sushrut Limaye (CEO) and Mrs. Anita Tripathi (COO).",
+    "Learn about Medi-Check Health Services Pvt Ltd, founded by Dr. Pradeep Mahajan in 1997. Meet our leadership team including Dr. Sushrut Limaye (CEO) and Mrs. Anita Tripathi (COO).",
   keywords:
     "Dr. Pradeep Mahajan, occupational health leadership, medical expertise, healthcare management, Medi-Check team",
 };

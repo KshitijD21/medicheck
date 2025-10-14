@@ -7,6 +7,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -17,12 +18,16 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1976D2]">
-                <span className="text-lg font-bold text-white">M</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Medi-Check Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
               <div>
                 <h3 className="text-xl font-bold">Medi-Check</h3>
-                <p className="text-sm text-gray-300">Health Services</p>
+                <p className="text-sm text-gray-300">Health Services Pvt Ltd</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 max-w-sm">
@@ -128,7 +133,9 @@ export function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-400">
-              <p>© 2024 Medi-Check Health Services. All rights reserved.</p>
+              <p>
+                © 2024 Medi-Check Health Services Pvt Ltd. All rights reserved.
+              </p>
             </div>
             {/* <div className="flex space-x-6 text-sm text-gray-400">
               <Link

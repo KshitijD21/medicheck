@@ -6,9 +6,10 @@ import { Clock, ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Get Healthcare Quote | Medi-Check Health Services",
+  title:
+    "Contact Us - Get Healthcare Quote | Medi-Check Health Services Pvt Ltd",
   description:
-    "Contact Medi-Check Health Services for occupational health solutions. Call +91 9321021566 or email info@medicheckworld.com. Located in Navi Mumbai, Maharashtra.",
+    "Contact Medi-Check Health Services Pvt Ltd for occupational health solutions. Call +91 9321021566 or email info@medicheckworld.com. Located in Navi Mumbai, Maharashtra.",
   keywords:
     "contact medi-check, healthcare quote, occupational health consultation, medical services inquiry",
 };

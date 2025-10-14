@@ -17,26 +17,32 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Medi-Check Health Services | Leading Occupational Health Provider Since 1997",
+    "Medi-Check Health Services Pvt Ltd | Leading Occupational Health Provider Since 1997",
   description:
     "Founded by Dr. Pradeep Mahajan in 1997, Medi-Check manages 30+ OHC centers nationally with global presence. Dedicated to occupational injury diagnosis, treatment and prevention.",
   keywords:
     "occupational health, maritime health services, corporate wellness, ambulance services, first aid training, health on wheels, Dr. Pradeep Mahajan",
-  authors: [{ name: "Medi-Check Health Services" }],
-  creator: "Medi-Check Health Services",
-  publisher: "Medi-Check Health Services",
+  authors: [{ name: "Medi-Check Health Services Pvt Ltd" }],
+  creator: "Medi-Check Health Services Pvt Ltd",
+  publisher: "Medi-Check Health Services Pvt Ltd",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://medicheckworld.com",
-    title: "Medi-Check Health Services | Leading Occupational Health Provider",
+    title:
+      "Medi-Check Health Services Pvt Ltd | Leading Occupational Health Provider",
     description:
       "27+ years of healthcare excellence. Managing 30+ OHC centers nationally with global presence across 5 countries.",
-    siteName: "Medi-Check Health Services",
+    siteName: "Medi-Check Health Services Pvt Ltd",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Medi-Check Health Services",
+    title: "Medi-Check Health Services Pvt Ltd",
     description: "Leading occupational health provider since 1997",
   },
   robots: {
