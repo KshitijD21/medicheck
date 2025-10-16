@@ -3,16 +3,16 @@ import { HeroSection } from "@/components/sections/hero-section";
 import LogoCarousel from "@/components/sections/logo-carousel";
 import { StatisticCard } from "@/components/sections/statistics";
 import { Testimonials } from "@/components/sections/testimonials";
-import { services, statistics, testimonials } from "@/lib/constants";
+import { COMPANY, services, statistics, testimonials } from "@/lib/constants";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
       <HeroSection
-        subtitle="Pioneered by Dr. Pradeep Mahajan in 1997"
+        subtitle={COMPANY.TAGLINE}
         title="Leading Occupational Health Services Provider"
-        description="Dedicated to diagnosis, treatment and prevention of occupational injury and disease. Managing 30+ OHC Centers nationally with global presence across 5 countries."
+        description={`Founded by ${COMPANY.FOUNDER} in ${COMPANY.ESTABLISHED}. Dedicated to diagnosis, treatment and prevention of occupational injury and disease. Managing 30+ OHC Centers nationally with global presence across 5 countries.`}
         ctaText="Get Healthcare Quote"
         ctaLink="/contact"
       />
@@ -106,7 +106,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#7CB342] rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Government Tie-ups with major organizations</span>
+                  <span>Prestigious Clients with major organizations</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#7CB342] rounded-full mt-2 flex-shrink-0"></div>

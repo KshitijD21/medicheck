@@ -14,17 +14,17 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Group Companies - Comprehensive Healthcare Ecosystem | Medi-Check",
   description:
-    "Discover Medi-Check's group companies: Dr. Mahajan Hospitals, Siddhant Marine, StemRx, Maya Diagnostics, and Family Welfare Health Service Trust.",
+    "Discover Medi-Check's group companies: Dr. Mahajan Hospitals, Medicheck Marine, StemRx, Maya Diagnostics, and Family Welfare Health Service Trust.",
   keywords:
-    "group companies, Dr. Mahajan Hospitals, Siddhant Marine, StemRx, Maya Diagnostics, healthcare ecosystem",
+    "group companies, Dr. Mahajan Hospitals, Medicheck Marine, StemRx, Maya Diagnostics, prestigious clients",
 };
 
 export default function GroupCompaniesPage() {
   return (
     <>
       <HeroSection
-        title="Our Healthcare Ecosystem"
-        description="A comprehensive network of specialized healthcare companies working together to provide complete medical solutions across diverse healthcare verticals."
+        title="Prestigious Clients & Partners"
+        description="A comprehensive network of specialized healthcare companies serving prestigious government and corporate clients with complete medical solutions across diverse healthcare verticals."
         ctaText="Explore Our Network"
         ctaLink="#companies"
         backgroundGradient={true}

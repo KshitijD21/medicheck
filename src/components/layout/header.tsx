@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { navItems } from "@/lib/constants";
+import { COMPANY, navItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Mail, Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
@@ -45,14 +45,16 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/logo.png"
-              alt="Medi-Check Logo"
+              alt={`${COMPANY.NAME} Logo`}
               width={40}
               height={40}
               className="object-contain"
             />
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-[#1976D2]">Medi-Check</h1>
-              <p className="text-xs text-[#64748B]">Health Services Pvt Ltd</p>
+              <h1 className="text-xl font-bold text-[#1976D2]">
+                {COMPANY.NAME}
+              </h1>
+              <p className="text-xs text-[#64748B]">{COMPANY.NAME_TAG}</p>
             </div>
           </Link>
 

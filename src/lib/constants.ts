@@ -1,5 +1,16 @@
 import { Client, GroupCompany, Location, NavItem, Portfolio, Service, Statistic, TeamMember, Testimonial } from "@/types";
 
+// Company branding constants
+export const COMPANY = {
+  NAME: "Medi-Check",
+  FULL_NAME: "Medi-Check Health Services Private Ltd",
+  NAME_TAG: "Health Services Private Ltd",
+  SHORT_NAME: "Medi-Check Health Services",
+  TAGLINE: "Bringing wellness to the workplace",
+  ESTABLISHED: "1997",
+  FOUNDER: "Dr. Pradeep Managave",
+} as const;
+
 // Navigation items
 export const navItems: NavItem[] = [
   { title: "Home", href: "/" },
@@ -271,9 +282,9 @@ export const portfolioItems: Portfolio[] = [
     achievements: ["10,000+ donors", "Partnership with blood banks", "Corporate participation"]
   },
   {
-    title: "Government Tie-ups",
-    description: "Empaneled with major government organizations for healthcare services",
-    category: "Government Partnership",
+    title: "Prestigious Clients",
+    description: "Empaneled with major government and corporate organizations for healthcare services",
+    category: "Client Partnership",
     achievements: ["Maharashtra Police", "AAI", "ESIC", "Various PSUs"]
   },
   {

@@ -155,13 +155,9 @@ export default function ContactPage() {
                         <div className="space-y-1 text-[#1E293B]">
                           <p>
                             <span className="font-medium">
-                              Monday - Friday:
+                              Monday - Saturday:
                             </span>{" "}
-                            9:00 AM - 6:00 PM
-                          </p>
-                          <p>
-                            <span className="font-medium">Saturday:</span> 9:00
-                            AM - 2:00 PM
+                            10:00 AM - 6:00 PM
                           </p>
                           <p>
                             <span className="font-medium">Sunday:</span> Closed
